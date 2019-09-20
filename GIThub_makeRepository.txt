@@ -1,0 +1,67 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\moksleivis> pwd 					//* show current forlder
+
+Path
+----
+C:\Users\moksleivis
+
+
+PS C:\Users\moksleivis> cd D:\WEB 				//* go to project folder
+PS D:\WEB> 										//* show files in project folder
+
+
+    Directory: D:\WEB
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       2019-09-19     17:03           1894 Semantika.html
+-a----       2019-09-19     21:18           3470 Prototipas.html
+
+
+PS D:\WEB> git init 											//*initializing git
+Initialized empty Git repository in D:/WEB/.git/
+PS D:\WEB> git config user.name "Inga Pakalnyte" 				//* enter user name
+PS D:\WEB> git config user.name
+Inga Pakalnyte
+PS D:\WEB> git config user.email "inga.dukstyna@gmail.com" 		//* enter email
+PS D:\WEB> git config user.email
+inga.dukstyna@gmail.com
+PS D:\WEB> git add .  											//* add git
+PS D:\WEB> git commit -m "Initial commit"  					    //* working wit git
+[master (root-commit) 1f5bccf] Initial commit
+ 2 files changed, 172 insertions(+)
+ create mode 100644 Prototipas.html
+ create mode 100644 Semantika.html
+PS D:\WEB> git log  									 		 //* working wit git
+commit 1f5bccf9ea1f887912c8dba17d3991a3160f0000 (HEAD -> master)
+Author: Inga Pakalnyte <inga.dukstyna@gmail.com>
+Date:   Fri Sep 20 08:32:09 2019 +0300
+
+    Initial commit
+PS D:\WEB> echo "# Prototype_aa" >> README.md  					//* instruction from github.com
+PS D:\WEB> git init
+Reinitialized existing Git repository in D:/WEB/.git/ 			//* instruction from github.com
+PS D:\WEB> git add README.md  		 							//* instruction from github.com
+PS D:\WEB> git commit -m "first commit"  						//* instruction from github.com
+[master 0f103a2] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS D:\WEB> git remote add origin https://github.com/Pakinga/Prototype_aa.git  //* instruction from github.com
+PS D:\WEB> git push -u origin master  		  					//* instruction from github.com
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': Pakinga  		            //* enter user name
+Password for 'https://Pakinga@github.com':  					//* enter password
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.54 KiB | 790.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Pakinga/Prototype_aa.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS D:\WEB>														//** Hurrah! Done!

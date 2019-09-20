@@ -1,0 +1,76 @@
+/*Universalus selektorius*/ 
+*{
+	background-color: rebeccapurple;
+}
+main{
+	background-color: aquamarine;
+}
+/*ID selektorius*/
+#super{
+	background-color: silver;
+}
+/*galima ir rasyti 
+article#super*/
+/*klases*/
+.super{
+	background-color: red;
+}
+.duper{
+	font-size: 3em;
+}
+.strong{
+	font-weight: bold;
+}
+/*
+article{
+	background-color: aqua;
+	color: silver;
+}
+header{
+	background-color: tomato;
+}
+*/
+/*Atributo selektorius*/
+
+a[href="http://www.kitm.lt"]{
+	background-color: sky;
+}
+a[href="http://www.delfi.lt"]{
+	background-color: white;
+}
+a[href="http://www.smm.lt"]{
+	background-color: yellow;
+}
+a[href="http://www.15min.lt"]{
+	background-color: orange;
+}
+a[href$=".pdf"]{
+	background-color: orange;
+}
+a[href$=".xlsx"]{
+	background-color: yellow;
+}
+a[href$=".docx"]{
+	background-color: white;
+}
+a[href$=".jpg"]{
+	background-color: red;
+}
+/*Pseudo klases*/
+/*Pvz, pasikeicia nuorodos spalva jei jau buvo naudota*/
+
+a:link{
+	color: red;
+}
+a:visited{
+	color: aqua;
+}
+a:hover{ /*kas nutinka kai uzvedam kursoriu ant nuorodos*/
+	color: green;
+}
+tr:nth-child(2n+2) {
+	background-color: yellow;
+}
+li:nth-child(2n+1) {
+	background-color: yellow;
+}
